@@ -4,6 +4,7 @@
 alarm[0]=5;
 //draw width
 width = obj_data.currentPieceWidth;
+phase = 0;
 //destination after move
 myDestX = 0;
 myDestY = 0;
