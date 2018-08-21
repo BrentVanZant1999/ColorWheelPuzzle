@@ -21,11 +21,11 @@ for (var i = 0; i<rowsCols; i++) {
     var newPiece = instance_create_depth(x,y,-counter,obj_piece);
     newPiece.indexX = j;
     newPiece.indexY = i;
-    newPiece.myDestX = (j*blockWidth)+(j*boundry)+topLeftX;
-    newPiece.myDestY = (i*blockWidth)+(i*boundry)+topLeftY;
-	  newPiece.x = newPiece.myDestX;
-    newPiece.y =    newPiece.myDestY;
-    newPiece.colorVal = arrayColor[counter];
+    newPiece.myXDest = (j*blockWidth)+(j*boundry)+topLeftX;
+    newPiece.myYDest = (i*blockWidth)+(i*boundry)+topLeftY;
+	newPiece.x = newPiece.myXDest;
+    newPiece.y = newPiece.myYDest;
+    newPiece.myColor = arrayColor[counter];
     counter++;
   }
 }
