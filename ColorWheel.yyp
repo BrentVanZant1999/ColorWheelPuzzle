@@ -63,14 +63,6 @@
             }
         },
         {
-            "Key": "30ecaefd-3530-4f9e-b18c-e03493799cfb",
-            "Value": {
-                "id": "e10a66c2-74b6-44a8-b1ab-c1df60d60cc9",
-                "resourcePath": "objects\\obj_piece\\obj_piece.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4f28f63b-bb79-4838-83c9-adc674378066",
             "Value": {
                 "id": "9a6ce023-ca0c-44e9-a25d-39e7b069894b",
@@ -227,22 +219,6 @@
             "Value": {
                 "id": "a3abf685-1bb7-41ff-8c61-22beb6c390d7",
                 "resourcePath": "objects\\obj_levelControl\\obj_levelControl.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "be369d19-be4a-4030-9587-986e1d9b5ccd",
-            "Value": {
-                "id": "54ae897b-2f25-49ca-8812-2027a9a29e50",
-                "resourcePath": "objects\\obj_roundController\\obj_roundController.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "c00d75fa-e053-4a35-8e69-978c887f4a0d",
-            "Value": {
-                "id": "565ec59b-6cfb-4709-b0d2-a5bd0a20291f",
-                "resourcePath": "objects\\obj_data\\obj_data.yy",
                 "resourceType": "GMObject"
             }
         },

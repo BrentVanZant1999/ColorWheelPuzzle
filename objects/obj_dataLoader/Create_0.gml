@@ -4,6 +4,9 @@ level = ini_read_real("gameData", "level", 1);
 theme = ini_read_real("gameData", "themeCurent", 2); 
 ini_close();
 
+//game functionality variables 
+offsetRight = 400;
+
 //theme variable declerations 
 theme1Background = make_color_rgb(246,237,245);
 theme1Color1 = make_color_rgb(193,107,134);

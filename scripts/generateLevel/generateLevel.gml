@@ -18,12 +18,12 @@ else {
 }
 for (var i = 0; i<rowsCols; i++) {
   for (var j = 0; j<rowsCols; j++) {
-    var newPiece = instance_create_depth(x,y,-counter,obj_piece);
+    var newPiece = instance_create_depth(x,y,-counter,obj_gridPiece);
     newPiece.indexX = j;
     newPiece.indexY = i;
     newPiece.myXDest = (j*blockWidth)+(j*boundry)+topLeftX;
     newPiece.myYDest = (i*blockWidth)+(i*boundry)+topLeftY;
-	newPiece.x = newPiece.myXDest;
+	newPiece.x = newPiece.myXDest+obj_dataLoader.offsetRight;
     newPiece.y = newPiece.myYDest;
     newPiece.myColor = arrayColor[counter];
     counter++;
