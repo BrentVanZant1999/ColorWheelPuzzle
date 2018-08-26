@@ -15,16 +15,12 @@ theme1Color3 = make_color_rgb(50,93,127);
 theme1Color4 = make_color_rgb(242,114,127);
 theme1Color5 = make_color_rgb(248,177,149);
 theme1UI  = make_color_rgb(104,122,128);
-
-theme2Background = make_color_rgb(11,12,16);
-theme2Color1 = make_color_rgb(102,252,241);
-theme2Color2 = make_color_rgb(69,162,158);
-theme2Color3 = make_color_rgb(128,43,177);
-theme2Color4 = make_color_rgb(149,7,64);
-theme2Color5 = make_color_rgb(197,7,63);
-theme2UI  = make_color_rgb(246,221,223);
-UIWidth = floor(room_width * .12);
-UIWidthSub = floor(room_width * .10);
+levelRows = 4; 
+saved4Block = 78;
+saved5Block = 60;
+saved6Block = 54;
+saved7Block = 44;
+saved8Block = 40;
 // variable declerations
 if (theme == 1) {
 	backgroundColor =theme1Background;
@@ -44,3 +40,21 @@ else {
 	color5 = theme2Color5;
 	UIColor = theme2UI;
 }
+
+unitWidth = 78;
+currentLevel[0,0]=1;
+currentLevel[0,1]=1;
+currentLevel[0,2]=1;
+currentLevel[0,3]=1;
+currentLevel[1,0]=1;
+currentLevel[1,1]=1;
+currentLevel[1,2]=1;
+currentLevel[1,3]=1;
+currentLevel[2,0]=1;
+currentLevel[2,1]=1;
+currentLevel[2,2]=1;
+currentLevel[2,3]=1;
+currentLevel[3,0]=1;
+currentLevel[3,1]=1;
+currentLevel[3,2]=1;
+currentLevel[3,3]=1;

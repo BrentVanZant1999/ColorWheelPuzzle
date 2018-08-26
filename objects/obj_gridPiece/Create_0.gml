@@ -1,5 +1,5 @@
 //create instance variables 
-width = obj_data.unitWidth; 
+width = obj_dataLoader.unitWidth; 
 
 isMoving = false;
 isActive = false; 
@@ -12,6 +12,6 @@ switchDir = 0;
 
 myXDest = 0;
 myYDest = 0;
-myDir = 0; 
+myDir = 0;
 myColor = -1; 
 myColorNext = -1; 

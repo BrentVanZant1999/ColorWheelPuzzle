@@ -1,3 +1,3 @@
-rows = 0;
-cols = 0; 
+
+counter = 0; 
 alarm[1] = 1; 
