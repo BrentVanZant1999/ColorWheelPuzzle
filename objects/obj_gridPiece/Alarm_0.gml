@@ -1,0 +1,2 @@
+isMoving = false;
+isActive = true; 

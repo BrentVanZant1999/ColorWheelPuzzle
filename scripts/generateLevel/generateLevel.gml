@@ -1,6 +1,7 @@
-// @description generateLevel(rowsCols,puzzleArray);
+// @description generateLevel(rowsCols,puzzleArray,colors);
 var rowsCols = argument0;
 var puzzleArray = argument1;
+var maxColors = argument2; 
 var centerX = room_width/2;
 var centerY = room_height/2;
 var length = 0; 
@@ -33,23 +34,24 @@ switch(rowsCols){
 }
 var topLeftX = 0;
 var topLeftY = 0;
-var boundry = 3;
+var boundry = 4;
 if (rowsCols % 2 == 0) {
-  topLeftX = centerX-floor((length*rowsCols/2))-((rowsCols/2)*2);
-  topLeftY = centerY-floor((length*rowsCols/2))-((rowsCols/2)*2);
+  topLeftX = centerX-(length*((rowsCols/2)))-(boundry*(rowsCols/2))+length/2;
+  topLeftY = centerY-(length*((rowsCols/2)))-(boundry*(rowsCols/2))+length/2;
 }
 else {
-  topLeftX = centerX-floor((length*rowsCols/2))-(blockWidth/2)-((rowsCols/2)*2);
-  topLeftY = centerY-floor((length*rowsCols/2))-(blockWidth/2)-((rowsCols/2)*2);
+  topLeftX = centerX-floor((length*rowsCols/2))-(boundry*(floor(rowsCols/2)));
+  topLeftY = centerY-floor((length*rowsCols/2))-(boundry*(floor(rowsCols/2)));
 }
 for (var i = 0; i<rowsCols; i++) {
   for (var j = 0; j<rowsCols; j++) {
     var newPiece = instance_create_depth(x,y,-counter,obj_gridPiece);
-    newPiece.indexX = j;
-    newPiece.indexY = i;
-    newPiece.myXDest = (j*blockWidth)+(j*boundry)+topLeftX;
-    newPiece.myYDest = (i*blockWidth)+(i*boundry)+topLeftY;
-	newPiece.x = newPiece.myXDest+obj_dataLoader.offsetRight;
+    newPiece.indexX = i;
+    newPiece.indexY = j;
+	newPiece.maxColors = maxColors; 
+    newPiece.myXDest = (i*length)+(i*boundry)+topLeftX;
+    newPiece.myYDest = (j*length)+(j*boundry)+topLeftY;
+	newPiece.x = newPiece.myXDest+room_width;
     newPiece.y = newPiece.myYDest;
     newPiece.myColor = puzzleArray[i,j];
     counter++;

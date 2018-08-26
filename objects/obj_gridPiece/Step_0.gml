@@ -5,3 +5,6 @@ if (isDone) {
 if (isSwitching) {
 	switchDist += switchStep;
 }
+if (isMoving) {
+	x-=moveStep;	
+}

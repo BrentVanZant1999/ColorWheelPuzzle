@@ -1,54 +1,54 @@
 switch(myColor) {
-	case(1):
+	case(0):
 	{
 		draw_set_color(obj_dataLoader.color1);
 	}
 	break;
-	case(2):
+	case(1):
 	{
 		draw_set_color(obj_dataLoader.color2);
 	}
 	break;
-	case(3):
+	case(2):
 	{
 		draw_set_color(obj_dataLoader.color3);
 	}
 	break;
-	case(4):
+	case(3):
 	{
 		draw_set_color(obj_dataLoader.color4);
 	}
 	break;
-	case(5):
+	case(4):
 	{
 		draw_set_color(obj_dataLoader.color5);
 	}
 	break;
 }
-draw_rectangle(x-(width/2),y-(width/2),x+(width/2),y+(width/2), 0);
+draw_rectangle(x-((width-fixDrawConst)/2),y-((width-fixDrawConst)/2),x+((width-fixDrawConst)/2),y+((width-fixDrawConst)/2), 0);
 if (isSwitching) {
 	switch(myColorNext) {
-		case(1):
+		case(0):
 		{
 			draw_set_color(obj_dataLoader.color1);
 		}
 		break;
-		case(2):
+		case(1):
 		{
 			draw_set_color(obj_dataLoader.color2);
 		}
 		break;
-		case(3):
+		case(2):
 		{
 			draw_set_color(obj_dataLoader.color3);
 		}
 		break;
-		case(4):
+		case(3):
 		{
 			draw_set_color(obj_dataLoader.color4);
 		}
 		break;
-		case(5):
+		case(4):
 		{
 			draw_set_color(obj_dataLoader.color5);
 		}
@@ -63,26 +63,53 @@ if (isSwitching) {
 		//left
 		case(1):
 		{
-			draw_rectangle(x-(width/2),y-(width/2),x-(width/2)+switchDist,y+(width/2),0);
+			draw_rectangle(x-((width-fixDrawConst)/2),y-((width-fixDrawConst)/2),x-((width-fixDrawConst)/2)+switchDist,y+((width-fixDrawConst)/2),0);
 		}
 		break;
 		//bot
 		case(2):
 		{
-			draw_rectangle(x-(width/2),y+(width/2),x+(width/2),y+(width/2)-switchDist,0);
+			draw_rectangle(x-((width-fixDrawConst)/2),y+((width-fixDrawConst)/2),x+((width-fixDrawConst)/2),y+((width-fixDrawConst)/2)-switchDist,0);
 		}
 		break;
 		//right
 		case(3):
 		{
-			draw_rectangle(x+(width/2),y-(width/2),x+(width/2)-switchDist,y+(width/2),0);
+			draw_rectangle(x+((width-fixDrawConst)/2),y-((width-fixDrawConst)/2),x+((width-fixDrawConst)/2)-switchDist,y+((width-fixDrawConst)/2),0);
 		}
 		break;
 		//top
 		case(4):
 		{
-			draw_rectangle(x-(width/2),y-(width/2),x+(width/2),y-(width/2)+switchDist,0);
+			draw_rectangle(x-((width-fixDrawConst)/2),y-((width-fixDrawConst)/2),x+((width-fixDrawConst)/2),y-((width-fixDrawConst)/2)+switchDist,0);
 		}
 		break;	
 	}
+}
+switch(obj_dataLoader.levelRows) {
+	case(4):
+	{
+		draw_sprite(spr_block4,0,x-(width/2),y-(width/2)); 
+	}
+	break;
+	case(5):
+	{
+		draw_sprite(spr_block5,0,x-(width/2),y-(width/2)); 
+	}
+	break;
+	case(6):
+	{
+		draw_sprite(spr_block6,0,x-(width/2),y-(width/2)); 
+	}
+	break;
+	case(7):
+	{
+		draw_sprite(spr_block7,0,x-(width/2),y-(width/2)); 
+	}
+	break;
+	case(8):
+	{
+		draw_sprite(spr_block8,0,x-(width/2),y-(width/2)); 
+	}
+	break;
 }
