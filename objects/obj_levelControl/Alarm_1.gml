@@ -1,1 +1,1 @@
-generateLevel(4,obj_dataLoader.currentLevel,3);
+generateLevel(8,obj_dataLoader.currentLevel,5);

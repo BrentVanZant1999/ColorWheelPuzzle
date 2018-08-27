@@ -32,6 +32,8 @@ switch(rowsCols){
 	}
 	break;
 }
+obj_dataLoader.levelRows = rowsCols;
+obj_dataLoader.unitWidth = length;
 var topLeftX = 0;
 var topLeftY = 0;
 var boundry = 4;

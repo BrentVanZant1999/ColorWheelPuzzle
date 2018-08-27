@@ -4,6 +4,7 @@ myColor = myColorNext;
 if (!isCenterSwitch) {
 	with(obj_gridPiece) {
 		isActive = true; 
+		isCenterSwitch = false;
 	}
 }
 else {
