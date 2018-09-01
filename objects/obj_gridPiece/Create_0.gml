@@ -24,3 +24,6 @@ indexY = 0;
 myDir = 0;
 myColor = -1; 
 myColorNext = -1; 
+
+
+

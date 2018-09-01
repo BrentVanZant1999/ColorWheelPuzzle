@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "5a0c7348-48e7-4e98-8032-d514ee707e6e",
+            "Value": {
+                "id": "968114ce-36b1-4c90-8427-2d1a45150684",
+                "resourcePath": "objects\\objPiece\\objPiece.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b5df773-abdc-43cd-9ad7-423213555038",
             "Value": {
                 "id": "bd39008b-38dd-4309-b5e3-6f777890d5a3",
@@ -292,6 +300,14 @@
                 "id": "e9001301-e1bb-4305-bcb8-fa36d3d997e6",
                 "resourcePath": "scripts\\scr_endLevel\\scr_endLevel.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ddf589b5-e1ed-48cc-b953-7d006b0a3dd9",
+            "Value": {
+                "id": "6d154066-5071-4d1c-8fc3-23e70264d794",
+                "resourcePath": "objects\\objTouchControl\\objTouchControl.yy",
+                "resourceType": "GMObject"
             }
         },
         {

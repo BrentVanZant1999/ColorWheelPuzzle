@@ -1,0 +1,3 @@
+with (objPiece) {
+	isActive = true;	
+} 
