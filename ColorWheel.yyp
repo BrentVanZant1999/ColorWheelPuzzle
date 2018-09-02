@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "4861b7d6-fe13-4776-8b1c-c801dbb1d9a2",
+            "Value": {
+                "id": "a1be4e1a-3242-44c7-9ad8-0a8e9dcfd086",
+                "resourcePath": "objects\\objWheelIndicator\\objWheelIndicator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4a102620-7a6f-4720-8123-2054ae239c48",
             "Value": {
                 "id": "53a40331-a408-4c05-b8ff-eb47b1214828",

@@ -65,3 +65,27 @@ for (var i = 0; i<rowsCols; i++) {
     counter++;
   }
 }
+
+var indicatorX; 
+var indicatorY = (room_height/4)*3;
+if (maxColors % 2 == 0) {
+  indicatorX = centerX-(70*((maxColors/2)))-(boundry*(maxColors/2))+70/2;
+}
+else {
+  indicatorX = centerX-floor((70*maxColors/2))-(boundry*(floor(maxColors/2)));
+}
+
+if (maxColors == 3) 
+{
+	instance_create_depth((room_width/2)-140, (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2), (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2)+140, (room_height/3)*4, -1, objWheelIndicator);
+}
+if (maxColors == 5) 
+{
+	var new = instance_create_depth((room_width/2)-180, (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2)-90, (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2), (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2)+90, (room_height/3)*4, -1, objWheelIndicator);
+	instance_create_depth((room_width/2)+180, (room_height/3)*4, -1, objWheelIndicator);
+}
